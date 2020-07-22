@@ -1,3 +1,16 @@
+# Self install required libraries if needed
+import sys
+
+def install(package):
+    try:
+        __import__(package)
+    except:
+        import subprocess
+        subprocess.call([sys.executable, "-m", "pip", "install", package])
+
+install("beautifulsoup4")
+install("pandas")
+
 # Import libs
 from urllib.request import Request, urlopen, urlretrieve
 from urllib.error import URLError, HTTPError
@@ -55,6 +68,6 @@ for i in range(0, pages*90, 90):
 # Create a DataFrame
 dataset = pd.DataFrame(games)
 # Export to Excel
-dataset.to_excel(r'C:\\Users\\games.xlsx', index = False, encoding = 'utf-8')
+dataset.to_excel(r'C:\\Users\\games.xlsx', index = False, encoding = 'utf-8') #change path as needed!
 
-dataset
+print('Done!')
