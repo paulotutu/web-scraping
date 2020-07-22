@@ -11,7 +11,7 @@
 
 ## General info
 This project was envisioned to help my fellows at www.centralxbox.com.br, the biggest latin american non-official Xbox website. They dedicate themselves to post news, reviews and anything else related to all Microsoft consoles 24/7.
-The need for regular and up to date information about deals and discounts motivated me to build them a spider that go through Microsoft Store and collects all games/dlcs/add-ons that are on sale andexport it to a spreedsheet, so they can upload it on their website and benefit all their viewers with fresh and sweet deals.
+The need for regular and up to date information about deals and discounts motivated me to build them a spider that go through Microsoft Store and collects all games/dlcs/add-ons that are on sale and export it to a spreedsheet, so they can upload into their website and benefit all their viewers with fresh and sweet deals.
 
 ## Technologies
 * Python - version 3.8.4
@@ -19,13 +19,12 @@ The need for regular and up to date information about deals and discounts motiva
 ## Setup
 * Python 3.x (https://www.python.org/)
 * Pip (can be installed with Python or follow instructions at https://pip.pypa.io/en/stable/installing/)
-* BeautifulSoup (via command: pip install beautifulsoup4)
-* Pandas (via command: pip install pandas)
 
 ## Features
 Ready:
 * Get ALL the games/dlcs/add-ons/etc on sales/discounts
 * Export the results in spreedsheet format (.xlsx)
+* Self install libraries if needed/missing. (last update!)
 
 To-do list:
 * Get images
@@ -36,7 +35,7 @@ To-do list:
 _in progress_
 
 ## Inspiration
-Web scraping classes at www.alura.com.br and real world needs.
+Real-world needs and graduation classes.
 
 ## Contact
 Created by [@paulotutu87] - feel free to contact me!
